@@ -1,0 +1,155 @@
+$bg-color: #f2f5fa;
+$aside-width: 90px;
+$header-bg-color: #f2f5fa;
+$header-height: 80px;
+$header-height-table: 60px;
+
+body {
+  // overflow: hidden;
+}
+
+.mfd-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+}
+
+.mfd-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mfd-page {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.mfd-aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  width: $aside-width;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #fcfcfd;
+}
+
+.mfd-aside-wrapper {
+  flex: 1;
+  border-right: 1px solid #e6e7ea;
+}
+
+.mfd-wrapper {
+  padding-top: $header-height;
+  padding-left: $aside-width;
+  min-width: 0;
+  display: flex;
+  flex: 1 auto;
+  flex-direction: column;
+  background-color: transparent;
+  height: 100%;
+  // overflow-y: auto;
+}
+
+.mfd-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: $aside-width;
+  z-index: 10;
+  height: $header-height;
+  padding: 0;
+  background-color: $header-bg-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+
+.mfd-content {
+  padding-top: 30px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mfd-container-xxl {
+  max-width: 1320px;
+  padding: 0 30px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Page Header
+.mfd-header-page {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.mfd-header-logo {
+  display: none;
+}
+
+.mfd-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 22px;
+
+  h1 {
+    padding-top: 8px;
+  }
+
+  button {
+    margin-right: 12px;
+  }
+}
+
+.mfd-header-title {
+  flex: 1;
+}
+
+// TABLE Portrait
+@media (max-width: 991.98px) {
+  .mfd-aside {
+    display: none;
+    width: 80px;
+  }
+
+  .mfd-wrapper {
+    padding-top: $header-height-table;
+    padding-left: 0;
+  }
+
+  .mfd-header {
+    left: 0;
+    height: $header-height-table;
+  }
+
+  .mfd-content {
+    padding-top: 15px;
+  }
+
+  .mfd-container-xxl {
+    padding: 0 15px;
+  }
+
+  .mfd-header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}

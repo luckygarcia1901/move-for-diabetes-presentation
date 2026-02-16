@@ -1,0 +1,33 @@
+.card {
+  margin-bottom: 0.5rem;
+
+  &.border-selected {
+    border: 2px solid var(--greyish);
+  }
+
+  &.card-full {
+    height: 100% !important;
+  }
+
+  .card-body {
+    .card-title {
+      @extend %title-5;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+    .card-subtitle {
+      @extend %title-6;
+      color: var(--grey);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &.card-white {
+    background-color: #fff;
+
+    .card-header {
+      background-color: inherit !important;
+      border-radius: 17px !important;
+    }
+  }
+}

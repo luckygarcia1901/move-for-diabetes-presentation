@@ -1,0 +1,81 @@
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+
+%title-1 {
+  font-size: 28px; //28pt
+  font-weight: $semibold;
+}
+
+%title-2 {
+  font-size: 21px;
+  //21pt
+  font-weight: $semibold;
+}
+
+%title-3 {
+  font-size: 30px;
+  //30pt
+  font-weight: $semibold;
+}
+
+%title-4 {
+  font-size: 16px;
+  //16pt
+  font-weight: $semibold;
+}
+
+%title-5 {
+  font-size: 22px;
+  //22pt
+  font-weight: $semibold;
+}
+
+%title-6 {
+  font-size: 25px;
+  //25pt
+  font-weight: $semibold;
+}
+
+%label-input {
+  font-size: 18px;
+  //18pt
+  font-weight: $semibold;
+}
+
+%title-mini {
+  font-size: 16px;
+  //16pt
+  font-weight: $regular;
+}
+
+%label-date {
+  font-size: 16px;
+  //16pt
+  font-weight: $medium;
+}
+
+%label-mini {
+  font-size: 11px;
+  //11pt
+  font-weight: $regular;
+}
+
+%label-nano {
+  font-size: 10px;
+  //10pt
+  font-weight: $regular;
+}
+
+%label-big {
+  font-size: 37px;
+  //47pt
+  font-weight: $medium;
+}
+
+%caption {
+  font-size: 14px !important;
+  //14pt
+  font-weight: $regular !important;
+  line-height: 25px;
+}

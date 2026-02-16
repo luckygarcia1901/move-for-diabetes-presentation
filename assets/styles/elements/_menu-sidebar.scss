@@ -1,0 +1,55 @@
+.content-sidebar {
+  width: 75%;
+  height: 100%;
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    border: none !important;
+  }
+}
+
+.sidebar {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 15;
+
+  .row {
+    width: 18%;
+  }
+
+  // Forzar el mismo color para todos los iconos del menú
+  .btn-icon img {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(7%) saturate(473%) hue-rotate(169deg) brightness(94%) contrast(87%);
+  }
+
+  @include media-breakpoint-down(xl) {
+    .row {
+      width: 25%;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .row {
+      width: 30%;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .row {
+      width: 72%;
+    }
+  }
+}
+
+// portrait
+.patient-sidebar {
+  height: 100%;
+
+  @include media-breakpoint-down(xl) {
+    @media (orientation: portrait) {
+      height: auto;
+    }
+  }
+}

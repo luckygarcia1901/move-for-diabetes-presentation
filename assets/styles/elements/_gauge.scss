@@ -1,0 +1,39 @@
+$value-line-color: rgb(55, 160, 206);
+$value-color: rgba(0, 0, 0, 0.7);
+mwl-gauge {
+  width: 120px;
+  height: 120px;
+  display: block;
+  padding: 10px;
+}
+mwl-gauge > .gauge > .dial {
+  stroke: #eee;
+  stroke-width: 3;
+  fill: rgba(0, 0, 0, 0);
+}
+mwl-gauge > .gauge > .value {
+  stroke: $value-line-color;
+  stroke-width: 8;
+  fill: rgba(0, 0, 0, 0);
+}
+mwl-gauge > .gauge > .value-text {
+  fill: $value-color;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.gauge-cmp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gauge-container {
+  width: 120px;
+  height: 120px;
+}
+.gauge-label {
+  font-size: 16px;
+  color: #1b2442;
+  font-weight: 600;
+}

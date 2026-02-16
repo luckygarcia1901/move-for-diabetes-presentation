@@ -1,0 +1,65 @@
+/* TITLES */
+.title {
+  &-1 {
+    @extend %title-1;
+  }
+
+  &-2 {
+    @extend %title-2;
+  }
+
+  &-3 {
+    @extend %title-3;
+  }
+
+  &-4 {
+    @extend %title-4;
+  }
+
+  &-5 {
+    @extend %title-5;
+  }
+
+  &-6 {
+    @extend %title-6;
+  }
+
+  &-mini {
+    @extend %title-mini;
+  }
+}
+
+/* LABELS */
+.label {
+  &-input {
+    @extend %label-input;
+  }
+
+  &-date {
+    @extend %label-date;
+  }
+
+  &-mini {
+    @extend %label-mini;
+  }
+
+  &-nano {
+    @extend %label-nano;
+  }
+
+  &-big {
+    @extend %label-big;
+  }
+}
+
+/* CAPTION */
+.caption {
+  @extend %caption;
+}
+
+/* ERRORS FORM */
+.control-error {
+  @extend %caption;
+  color: var(--danger) !important;
+  margin: 1px 5px;
+}

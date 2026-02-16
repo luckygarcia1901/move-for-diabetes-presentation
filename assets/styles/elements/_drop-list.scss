@@ -1,0 +1,12 @@
+.card-box {
+  min-height: 250px;
+}
+
+.cdk-drop-list-dragging {
+  border: 3px dashed #8396d2;
+  background: #e6edf7 !important;
+
+  span {
+    display: none !important;
+  }
+}

@@ -1,0 +1,84 @@
+// Fonts
+$font-family-base: "Poppins";
+
+// Buttons
+$btn-padding-y: 8px;
+$btn-padding-x: 8px;
+$btn-border-radius: 17px;
+$btn-border-radius-sm: 17px;
+$btn-border-radius-lg: 17px;
+$btn-border-width: 0;
+$btn-font-size: 16px;
+$btn-focus-box-shadow: none;
+$btn-font-weight: $semibold;
+
+// Margin
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+);
+
+// Cards
+$card-border-radius: 17px;
+$card-border-width: 0px;
+$card-spacer-y: 20px;
+$card-spacer-x: 30px;
+$card-cap-bg: rgba(0, 0, 0, 0.06);
+
+// Inputs
+$input-padding-y: 8px;
+$input-padding-x: 12px;
+$input-font-size: 14px;
+$input-font-weight: 400;
+$input-border-radius: 17px;
+$input-border-width: 0;
+$input-disabled-bg: #8d92a0;
+$input-placeholder-color: #c8c9ca;
+$input-focus-box-shadow: none;
+
+// Selects
+$form-select-padding-y: 8px;
+$form-select-padding-x: 8px;
+$form-select-font-size: 12px;
+$form-select-font-weight: 400;
+$form-select-border-radius: 17px;
+$form-select-disabled-bg: #8d92a0;
+$form-select-border-width: 0;
+
+// Checks
+$form-check-input-checked-bg-color: #1da6e2;
+$form-check-input-bg: #f7f7f7;
+$form-check-input-border: 0;
+$form-check-input-focus-border: 0;
+$form-check-input-focus-box-shadow: none;
+
+// Badge
+$badge-font-size: 13px;
+$badge-font-weight: $regular;
+
+// ListGroup
+$list-group-border-width: 0;
+$list-group-border-radius: 17px;
+$list-group-item-padding-y: 1rem;
+$list-group-item-padding-x: 26px;
+
+// Accordion
+$accordion-bg: #f7f7f7;
+$accordion-border-radius: 17px;
+$accordion-border-width: 0;
+$accordion-button-color: #3a6586 !important;
+$accordion-button-active-bg: #f7f7f7;
+$accordion-icon-color: #212145;
+$accordion-icon-active-color: #212145;
+
+// Range
+$form-range-thumb-width: 1.4rem;
+$form-range-thumb-height: 1rem;
+$form-range-thumb-border-radius: 0.2rem;
+$form-range-thumb-bg: #1da6e2;
+$form-range-track-bg: #dedede;

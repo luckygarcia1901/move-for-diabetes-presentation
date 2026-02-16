@@ -1,0 +1,121 @@
+$colors: (
+  "primary",
+  "secondary",
+  "tertiary",
+  "grey",
+  "greyish",
+  "light",
+  "light-four",
+  "danger",
+  "black",
+  "dark-blue",
+  "denim",
+  "pinkish-grey"
+);
+
+body[data-theme="light"] {
+  // Variable Colors
+  --primary: #1b2442; // darkBlueGrey
+  --secondary: #182652; // darkSlateBlue
+  --tertiary: #f2f5fa; // paleGrey
+  --grey: #8d92a0; // grey
+  --greyish: #3c3c3c; // greyishBrown (labels form)
+  --light: #f7f7f7; // light (background inputs and some card),
+  --light-four: #e7e7e7; // light (some buttons outline),
+  --danger: #fc261a; // orangeRed
+  --black: #202020; // black (some titles)
+  --dark-blue: #1da6e2; // darkSkyBlue (some buttons)
+  --dark-blue-light: #87cded; // darkSkyBlue (some buttons)
+  --denim: #3a6586; // Some titles
+  --pinkish-grey: #e9e9e9;
+
+  background: var(--tertiary);
+  overflow-x: hidden;
+
+  label {
+    color: var(--greyish);
+    font-weight: $semibold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--secondary);
+    font-weight: $semibold;
+  }
+}
+
+body[data-theme="dark"] {
+  // Variable Colors
+  --primary: #1b2442; // darkBlueGrey
+  --secondary: #fff; // darkSlateBlue
+  --tertiary: #f2f5fa; // paleGrey
+  --grey: #98989f; // grey
+  --greyish: #fff; // greyishBrown (labels form)
+  --light: #1c1c1e; // light (background inputs and some card),
+  --light-four: #e7e7e7; // light (some buttons outline),
+  --danger: #fc261a; // orangeRed
+  --black: #000; // black (some titles)
+  --black-two: #0a0a0a;
+  --dark-blue: #1da6e2; // darkSkyBlue (some buttons)
+  --dark-blue-light: #87cded; // darkSkyBlue (some buttons)
+  --dark-grey: #2c2c2e; // inputs
+  --denim: #3a6586; // Some titles
+  --pinkish-grey: #e9e9e9;
+
+  background: var(--black);
+  overflow-x: hidden;
+
+  label {
+    color: var(--greyish);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--secondary);
+    font-weight: $semibold;
+  }
+
+  .list-group-item,
+  .card,
+  .mat-dialog-container,
+  .mat-button-toggle-appearance-standard,
+  .mat-autocomplete-panel {
+    background-color: var(--light);
+  }
+
+  .mat-option,
+  .text-black,
+  span {
+    color: var(--grey) !important;
+  }
+
+  .border-bottom,
+  .mat-button-toggle {
+    border-color: var(--grey) !important;
+  }
+
+  .border-end {
+    border-color: var(--black-two) !important;
+  }
+
+  .form-control {
+    background-color: var(--dark-grey) !important;
+  }
+
+  .btn-icon.only-icon {
+    background-color: var(--light) !important;
+  }
+
+  .btn-white {
+    background-color: var(--light) !important;
+    color: var(--secondary) !important;
+  }
+}

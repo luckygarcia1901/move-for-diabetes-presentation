@@ -1,0 +1,109 @@
+.fw-medium {
+  font-weight: $medium !important;
+}
+
+.fw-semibold {
+  font-weight: $semibold !important;
+}
+
+.divider-columns {
+  border-right: 1px solid #dee2e6;
+
+  @media (max-width: 992px) {
+    border-right: none !important;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: var(--#{$color}) !important;
+  }
+}
+
+@each $color in $colors {
+  .bg-#{$color} {
+    background: var(--#{$color}) !important;
+  }
+}
+
+@each $color in $colors {
+  .btn-#{$color} {
+    background: var(--#{$color}) !important;
+    color: #fff !important;
+  }
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--#{greyish}) !important;
+}
+
+@for $i from 1 through 100 {
+  .w-#{$i} {
+    width: #{$i}#{"%"};
+  }
+}
+
+@for $i from 1 through 100 {
+  .h-#{$i} {
+    height: #{$i}#{"%"};
+  }
+}
+
+.rotate-90 {
+  transform: rotate(180deg);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-big {
+  border-radius: 17px !important;
+}
+
+.avatar {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+}
+
+.avatar-big {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.scroll-card-mini {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 435px;
+  max-height: 435px;
+}
+
+.scroll-card {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 505px;
+  max-height: 505px;
+}
+
+.scroll-card-without-title {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 545px;
+  max-height: 545px;
+}
+
+@include media-breakpoint-up(lg) {
+  .container-content {
+    height: 100vh;
+  }
+}

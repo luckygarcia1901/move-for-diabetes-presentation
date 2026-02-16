@@ -1,0 +1,25 @@
+.toast-notification {
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .name {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
